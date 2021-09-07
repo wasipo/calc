@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import NaviCalc from './Components/Forms/DefaultCalcForm.js';
+import Header from './Components/Header.js';
+import CalcResultDisplay from './Components/Display/CalcResultDisplay.js';
+import {
+  Container,
+  CssBaseline
+} from '@mui/material';
 
 function App() {
   return (
+    <>
+    <CssBaseline />
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Container>
+            <Header />
+            <CalcResultDisplay />
+            <NaviCalc />
+        </Container>
     </div>
+    </>
   );
 }
 
