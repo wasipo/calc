@@ -1,12 +1,10 @@
-
-import HeaderStyle from "./Styleds/Box.js";
-import MainHeadLine from "./Styleds/TypoGraphy.js";
-
+import {HeaderStyle} from "./Styleds/Box"
+import {MainHeadLine} from "./Styleds/TypoGraphy";
 
 const Header = () => {
     return (
         <HeaderStyle>
-            <MainHeadLine>ふぁっきんナビダイヤル</MainHeadLine>
+            <MainHeadLine>ナビダイヤル料金概算</MainHeadLine>
         </HeaderStyle>
     )
 }

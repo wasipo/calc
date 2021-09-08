@@ -1,6 +1,7 @@
 import NaviCalc from './Components/Forms/DefaultCalcForm.js';
 import Header from './Components/Header.js';
-import CalcResultDisplay from './Components/Display/CalcResultDisplay.js';
+import CalcResultDisplay from './Components/Displays/CalcResultDisplay.js';
+
 import {
   Container,
   CssBaseline
