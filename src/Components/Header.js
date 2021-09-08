@@ -1,9 +1,13 @@
 
+import HeaderStyle from "./Styleds/Box.js";
+import MainHeadLine from "./Styleds/TypoGraphy.js";
+
+
 const Header = () => {
     return (
-        <header className="App-header">
-            <h1>ふぁっきんナビダイヤル</h1>
-        </header>
+        <HeaderStyle>
+            <MainHeadLine>ふぁっきんナビダイヤル</MainHeadLine>
+        </HeaderStyle>
     )
 }
 
