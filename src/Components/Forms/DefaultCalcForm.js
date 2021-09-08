@@ -4,7 +4,7 @@ import {
     Stack,
     FormLabel
 } from '@mui/material';
-import { TextItem } from '../Styleds/Box.js'
+import { TextItem,CalcExec } from '../Styleds/Box.js'
 
 
 const DefaultCalcForm = () => {
@@ -19,8 +19,9 @@ const DefaultCalcForm = () => {
                 <FormLabel>10秒毎の料金</FormLabel>
                 <TextField size="small" />
             </TextItem>
-            <Button mx="auto">計算するよ</Button>
+            <CalcExec variant="contained" style={{width: '230px',margin: '0 auto',marginTop: '50px'}}>計算するよ</CalcExec>
         </Stack>
+
         </div>
     );
 };

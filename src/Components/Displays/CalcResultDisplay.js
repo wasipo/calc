@@ -2,10 +2,12 @@ import {
     Box,
 } from '@mui/material';
 
+import {ViewResult} from '../Styleds/TypoGraphy';
+
 const CalcResultDisplay = () => {
     return (
-        <Box sx={{ flexGrow: 1, mx: 'auto', height: 100, lineHeight: 7, textAlign: 'center'}}>
-                165165661
+        <Box sx={{ flexGrow: 1, mx: 'auto', lineHeight: 7, textAlign: 'center'}}>
+                <ViewResult>165165661</ViewResult>
         </Box>
     );
 }

@@ -12,3 +12,12 @@ export const MainHeadLine = styled(Typography)(({ theme }) => ({
     margin: '0 auto',
     color: theme.palette.text.primary,
 }));
+
+export const ViewResult = styled(Typography)(({theme}) => ({
+    ...theme.typography.h2,
+    fontSize: 30,
+    padding: 50,
+    textAlign: 'center',
+    margin: '0 auto',
+    color: theme.palette.text.primary,
+}));
