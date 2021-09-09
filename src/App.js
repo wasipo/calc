@@ -14,7 +14,6 @@ function App() {
     <div className="App">
         <Container>
             <Header />
-            <CalcResultDisplay />
             <NaviCalc />
         </Container>
     </div>

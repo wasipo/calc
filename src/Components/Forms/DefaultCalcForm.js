@@ -11,7 +11,7 @@ import Display from '../Displays/CalcResultDisplay'
 
 const DefaultCalcForm = (Props) => {
 
-    let result = 0;
+    const result = 230;
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = inputData => calcs(inputData);
@@ -19,11 +19,11 @@ const DefaultCalcForm = (Props) => {
     const calcs = data => {
         const callTime = Number(data.call_time_minutes * 60)+Number(data.call_time_second);
         result = (callTime/data.billing_term)*data.cost;
-        console.log(result);
     };
 
     return (
         <div>
+        <Display cost={result} />
         <Stack component="form" autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
             <TextItem mx="auto">
                 <Grid container spacing={2}>
