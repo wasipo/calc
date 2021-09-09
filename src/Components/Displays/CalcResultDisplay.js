@@ -4,7 +4,9 @@ import {
 
 import {ViewResult} from '../Styleds/TypoGraphy';
 
-const CalcResultDisplay = () => {
+
+const CalcResultDisplay = (Props) => {
+
     return (
         <Box sx={{ flexGrow: 1, mx: 'auto', lineHeight: 7, textAlign: 'center'}}>
                 <ViewResult>165165661</ViewResult>
