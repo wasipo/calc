@@ -19,8 +19,7 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm test
-      - working-directory: ./src
-
+       
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
