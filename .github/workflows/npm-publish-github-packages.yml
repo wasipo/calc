@@ -21,17 +21,8 @@ jobs:
       - run: npm test
         env:
           CI: true
-          # testの設定
-          # ここでは、srcディレクトリ配下の__tests__ディレクトリと、
-          # srcディレクトリ配下の.spec.js、.test.js拡張子のファイルをテスト対象とする
-          # また、.test.jsファイルが存在するディレクトリの中にはテスト対象外のものがあるため、
-          # そのディレクトリをtestPathIgnorePatternsに指定している
-          # 参考：https://jestjs.io/docs/configuration#testmatch-arraystring
-          working-directory: ./src
           continue-on-error: ${{ matrix.continue_on_error }}
-#          with:
-#            args: ["--testLocationInResults", "--testPathPattern=/src/**/__tests__/**/*.{js,jsx,ts,tsx},/src/**/*.{spec,test}.{js,jsx,ts,tsx}", "--testPathIgnorePatterns=/src/**/*.test.js"]
-
+        working-directory: ./src
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
